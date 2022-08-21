@@ -12,10 +12,11 @@ for cookie in r.cookies.keys():
 ###
 url2 = "https://www.liuxue86.com"
 url3 = "http://jandan.net/"
+url4 = "https://demo.eleadmin.com/login"
 session = requests.session()
-req = session.get(url3, allow_redirects=True)
+req = session.get(url4, allow_redirects=True)
 
-params = {"name": "xxx"}
+params = {"admin": "xxx"}
 
 req = session.post(url2, allow_redirects=True)
 
